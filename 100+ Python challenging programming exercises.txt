@@ -25,15 +25,10 @@ between 2000 and 3200 (both included).
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
 Hints: 
-Consider use range(#begin, #end) method
+Consider use list comprehension method
 
 Solution:
-l=[]
-for i in range(2000, 3201):
-    if (i%7==0) and (i%5!=0):
-        l.append(str(i))
-
-print ','.join(l)
+print([x for x in range(2000,3201) if x%7==0 and x%5!=0])
 #----------------------------------------#
 
 #----------------------------------------#
